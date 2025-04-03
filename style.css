@@ -1,0 +1,605 @@
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #3b82f6;
+    --accent-color: #60a5fa;
+    --background-color: #f8fafc;
+    --card-background: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --hover-color: #dbeafe;
+}
+
+/* Base styles */
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background-color);
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 1.75em;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.3em;
+    margin-top: 1.5em;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+/* Timeline entries */
+.timeline-entry {
+    margin-bottom: 2em;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: #24292e;
+}
+
+/* Project cards */
+.project {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* Emoji styles */
+.emoji {
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    margin-top: 3em;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .module-list {
+        grid-template-columns: 1fr;
+    }
+    
+    body {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
+
+.profile-container {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+    padding: 3px;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.1);
+    margin-bottom: 1em;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.name-header {
+    margin: 0;
+    font-size: 2.5em;
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 0.2em;
+}
+
+/* Social links with outline effect */
+.social-link {
+    color: var(--text-primary);
+    font-size: 1.3em;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 0.3em;
+    position: relative;
+}
+
+.social-link i {
+    -webkit-text-stroke: 1px currentColor;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Platform-specific colors with outline */
+.social-link .fa-linkedin {
+    color: #0077b5;
+    -webkit-text-stroke: 1px #0077b5;
+}
+
+.social-link .fa-github {
+    color: #333;
+    -webkit-text-stroke: 1px #333;
+}
+
+.social-link .fa-envelope {
+    color: #ea4335;
+    -webkit-text-stroke: 1px #ea4335;
+}
+
+/* Hover effects */
+.social-link:hover {
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.social-link:hover i {
+    filter: brightness(1.2);
+    -webkit-text-stroke: 2px currentColor;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .name-header {
+        font-size: 2em;
+    }
+    
+    .social-link {
+        font-size: 1.2em;
+    }
+}
+
+/* Experience section styling */
+.experience-item {
+    background: var(--card-background);
+    padding: 1.5em;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.1);
+    margin-bottom: 2em;
+    border: 1px solid rgba(37, 99, 235, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.15);
+}
+
+.experience-header {
+    margin-bottom: 1em;
+}
+
+.experience-header h3 {
+    margin: 0;
+    color: #24292e;
+    font-size: 1.3em;
+}
+
+.company-info {
+    margin: 0.5em 0;
+}
+
+.company-name {
+    font-weight: 600;
+    color: #0366d6;
+}
+
+.company-name a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.company-name a:hover {
+    text-decoration: underline;
+}
+
+.location {
+    color: #586069;
+    margin-left: 1em;
+}
+
+.date {
+    color: #586069;
+    font-size: 0.9em;
+}
+
+.company-description {
+    color: #586069;
+    font-style: italic;
+    margin: 0.5em 0;
+}
+
+.achievements {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+.achievements li {
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.skills-used {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.skill-tag {
+    background-color: #f1f8ff;
+    color: #0366d6;
+    padding: 0.3em 0.8em;
+    border-radius: 15px;
+    font-size: 0.9em;
+    border: 1px solid #c8e1ff;
+}
+
+.skill-tag:hover {
+    background-color: #e1f0ff;
+}
+
+.projects-container {
+    display: grid;
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.project-item {
+    padding: 1.5em;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-item h3 {
+    color: #24292e;
+    margin: 0 0 1em 0;
+    font-size: 1.3em;
+}
+
+.project-description {
+    color: #586069;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.project-highlights {
+    margin: 1em 0;
+    padding-left: 1.5em;
+}
+
+.project-highlights li {
+    margin-bottom: 0.5em;
+    color: #444d56;
+}
+
+.skills-used {
+    margin-top: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.skill-tag {
+    background-color: #f1f8ff;
+    color: #0366d6;
+    padding: 0.3em 0.8em;
+    border-radius: 15px;
+    font-size: 0.9em;
+    border: 1px solid #c8e1ff;
+}
+
+.skill-tag:hover {
+    background-color: #e1f0ff;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.education-item {
+    padding: 1.5em;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2em;
+}
+
+.education-header {
+    margin-bottom: 1.5em;
+}
+
+.education-header h3 {
+    color: #24292e;
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.university-info {
+    margin: 0.5em 0;
+}
+
+.university-name {
+    font-weight: 600;
+    color: #0366d6;
+}
+
+.location {
+    color: #586069;
+    margin-left: 1em;
+}
+
+.date {
+    color: #586069;
+    font-size: 0.9em;
+}
+
+.year-section {
+    margin-bottom: 2em;
+}
+
+.year-section h4 {
+    color: #24292e;
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.module-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.module-list li {
+    padding: 0.5em;
+    border-radius: 4px;
+    background-color: #f6f8fa;
+}
+
+.grade {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    margin-right: 0.5em;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.grade:contains("High Distinction") {
+    background-color: #dcffe4;
+    color: #28a745;
+}
+
+.grade:contains("Distinction") {
+    background-color: #fff5d8;
+    color: #cb6f0f;
+}
+
+.grade:contains("Credit") {
+    background-color: #f1f8ff;
+    color: #0366d6;
+}
+
+@media (max-width: 768px) {
+    .module-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hero section styling */
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 2em 0;
+    padding: 1em;
+}
+
+.profile-container {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro-container {
+    flex-grow: 1;
+}
+
+.name-header {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 1.4em;
+    color: #666;
+    margin: 0.5em 0 1em 0;
+    font-style: italic;
+}
+
+.social-links {
+    display: flex;
+    gap: 1em;
+}
+
+.social-link {
+    font-size: 1.8em;
+    transition: transform 0.3s ease;
+}
+
+/* Platform-specific colors */
+.social-link .fa-linkedin {
+    color: #0077b5;
+}
+
+.social-link .fa-github {
+    color: #333;
+}
+
+.social-link .fa-envelope {
+    color: #ea4335;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name-header {
+        font-size: 2em;
+    }
+
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Logo styling */
+.company-logo-container,
+.university-logo-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.company-logo,
+.university-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Specific adjustments for MoneyMatch logo */
+.company-logo {
+    object-fit: cover;
+}
+
+/* Specific adjustments for UoB logo */
+.university-logo {
+    object-fit: contain;
+    padding: 2px;
+}
+
+/* Update experience and education headers */
+.experience-header,
+.education-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.experience-info,
+.education-info {
+    flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .company-logo-container,
+    .university-logo-container {
+        width: 50px;
+        height: 50px;
+    }
+
+    .experience-header,
+    .education-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .company-logo-container,
+    .university-logo-container {
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+}
