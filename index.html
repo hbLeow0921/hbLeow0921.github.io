@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HanBin Leow</title>
+    <title>Leow Han Bin</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Add Font Awesome for social icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="hero-section">
         <div class="profile-container">
             <img src="https://res.cloudinary.com/dmeqoo0ql/image/upload/c_fill,w_400,h_400,q_auto,f_auto/v1743677212/IMG_7521_cxcm7h.jpg" 
-                 alt="HanBin Leow" 
+                 alt="Leow Han Bin" 
                  class="profile-image">
         </div>
         <div class="intro-container">
-            <h1 class="name-header">HanBin Leow</h1>
-            <p class="tagline">I like to build AI and solve complex problems 🧠💻✨</p>
+            <h1 class="name-header">Leow Han Bin</h1>
+            <p class="tagline">Building AI solutions &amp; solving complex problems 🧠💻✨</p>
+            <div class="contact-details">
+                <span class="contact-item"><i class="fas fa-map-marker-alt"></i> Petaling Jaya, Selangor, Malaysia</span>
+                <span class="contact-item"><i class="fas fa-phone"></i> +6011-14187813</span>
+            </div>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/hanbin-leow-9a3b22256/" target="_blank" class="social-link">
                     <i class="fab fa-linkedin"></i>
@@ -25,7 +28,7 @@
                 <a href="https://github.com/hbLeow0921" target="_blank" class="social-link">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:hanleow0921@gmail.com" class="social-link">
+                <a href="mailto:leowhanbin@outlook.com" class="social-link">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
@@ -33,7 +36,7 @@
     </div>
     
     <h2>About Me</h2>
-    <p>Hello! I am an AI and Computer Science graduate with a strong passion for technology and innovation. With expertise in artificial intelligence, machine learning, and software development, I thrive on solving complex problems and building intelligent solutions. I am always eager to learn, adapt, and contribute to the ever-evolving tech landscape.</p>
+    <p>Recent graduate in Artificial Intelligence and Computer Science from the University of Birmingham with hands-on experience in data science, machine learning, and computer vision. Proven ability to build end-to-end ML pipelines, conduct rigorous experimentation, and deliver actionable insights from large datasets. Seeking a role where I can apply strong Python and deep learning skills to real-world AI challenges.</p>
 
     <h2>Experience</h2>
     <div class="experience-item">
@@ -54,61 +57,109 @@
         </div>
         <p class="company-description">Malaysia's Multinational Financial Technology Firm</p>
         <ul class="achievements">
-            <li>Successfully developed machine learning models for customer segmentation and product recommendations</li>
-            <li>Conducted A/B tests to evaluate the effectiveness of new algorithms and contributed to the refinement of the recommendation system</li>
-            <li>Cleaned, pre-processed, and analyzed large datasets to extract actionable insights using R, SQL and Amazon QuickSight</li>
+            <li>Developed and deployed machine learning models for customer segmentation and personalised product recommendations, improving targeting accuracy by identifying distinct user cohorts</li>
+            <li>Designed and executed A/B tests to evaluate algorithm effectiveness, translating results into iterative improvements to the recommendation engine</li>
+            <li>Cleaned, pre-processed, and analysed large-scale datasets using R, SQL, and Amazon QuickSight to surface actionable business insights for stakeholders</li>
+            <li>Collaborated with cross-functional teams to integrate data pipelines into production environments on AWS, ensuring scalability and reliability</li>
         </ul>
         <div class="skills-used">
             <span class="skill-tag">R</span>
             <span class="skill-tag">SQL</span>
             <span class="skill-tag">Machine Learning</span>
             <span class="skill-tag">Amazon QuickSight</span>
+            <span class="skill-tag">AWS</span>
             <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">A/B Testing</span>
         </div>
     </div>
 
     <h2>Featured Projects</h2>
     <div class="projects-container">
         <div class="project-item">
-            <h3>Financial System Stability Framework</h3>
+            <h3>Staff Detection System with PyTorch</h3>
             <p class="project-description">
-                Developed an innovative Multi-Agent Reinforcement Learning (MARL) framework integrated with the Markowitz Portfolio Theory to prevent cascading failures in interconnected financial systems. This hybrid approach combines modern AI techniques with traditional financial models to enhance system stability.
+                A real-time staff detection pipeline using deep learning for workplace monitoring and access management. Leverages transfer learning and custom object detection to achieve robust performance across varied conditions.
             </p>
             <ul class="project-highlights">
-                <li>Implemented a sophisticated MARL architecture to model complex financial interactions</li>
-                <li>Integrated Markowitz Model for optimal risk-return portfolio allocation</li>
-                <li>Demonstrated significant improvement in preventing systemic financial failures</li>
+                <li>Implemented a custom object detection model using PyTorch and transfer learning on a pre-trained ResNet/YOLO backbone</li>
+                <li>Built a data preprocessing pipeline to handle image augmentation, annotation parsing, and batch loading with PyTorch DataLoader</li>
+                <li>Evaluated model performance using precision, recall, and mAP metrics, achieving robust detection across varied lighting conditions</li>
+            </ul>
+            <div class="skills-used">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Transfer Learning</span>
+                <span class="skill-tag">Computer Vision</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3>Preventing Cascading Failures with MARL &amp; Markowitz Model</h3>
+            <p class="project-description">
+                A Multi-Agent Reinforcement Learning (MARL) framework integrated with the Markowitz Portfolio Model to detect and prevent cascading failures in interconnected financial systems.
+            </p>
+            <ul class="project-highlights">
+                <li>Designed a MARL environment to simulate systemic risk scenarios in financial networks, training agents to take corrective actions under uncertainty</li>
+                <li>Integrated Markowitz mean-variance optimisation as a risk constraint layer, balancing return maximisation with failure prevention</li>
             </ul>
             <div class="skills-used">
                 <span class="skill-tag">Python</span>
                 <span class="skill-tag">scikit-learn</span>
                 <span class="skill-tag">NumPy</span>
                 <span class="skill-tag">Pandas</span>
-                <span class="skill-tag">MARL</span>
-            </div>
-        </div>
-
-        <div class="project-item">
-            <h3>IMDb Sentiment Analysis Engine</h3>
-            <p class="project-description">
-                Built a sophisticated Natural Language Processing (NLP) system using LSTM (Long Short-Term Memory) neural networks to analyze and classify IMDb movie reviews. The model effectively distinguishes between positive and negative sentiments in user-generated content.
-            </p>
-            <ul class="project-highlights">
-                <li>Achieved high accuracy in sentiment classification using deep learning</li>
-                <li>Implemented LSTM architecture for better context understanding in text analysis</li>
-                <li>Utilized version control for collaborative development and code management</li>
-            </ul>
-            <div class="skills-used">
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">PyTorch</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">NLP</span>
-                <span class="skill-tag">LSTM</span>
+                <span class="skill-tag">Reinforcement Learning</span>
             </div>
         </div>
     </div>
 
-   
+    <h2>Technical Skills</h2>
+    <div class="skills-section">
+        <div class="skill-category">
+            <h4>Proficient In</h4>
+            <div class="skills-used">
+                <span class="skill-tag highlight">Python</span>
+                <span class="skill-tag highlight">TensorFlow</span>
+                <span class="skill-tag highlight">PyTorch</span>
+                <span class="skill-tag highlight">NumPy</span>
+                <span class="skill-tag highlight">Pandas</span>
+                <span class="skill-tag highlight">Scikit-Learn</span>
+                <span class="skill-tag highlight">R</span>
+                <span class="skill-tag highlight">MySQL</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h4>Experienced With</h4>
+            <div class="skills-used">
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Amazon QuickSight</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">OpenCV</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h4>Familiar With</h4>
+            <div class="skills-used">
+                <span class="skill-tag subtle">Java</span>
+                <span class="skill-tag subtle">PostgreSQL</span>
+                <span class="skill-tag subtle">Git</span>
+                <span class="skill-tag subtle">Docker</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h4>Areas of Expertise</h4>
+            <div class="skills-used">
+                <span class="skill-tag expertise">Machine Learning</span>
+                <span class="skill-tag expertise">Computer Vision</span>
+                <span class="skill-tag expertise">NLP</span>
+                <span class="skill-tag expertise">Data Analysis</span>
+                <span class="skill-tag expertise">A/B Testing</span>
+                <span class="skill-tag expertise">Model Deployment</span>
+            </div>
+        </div>
+    </div>
 
     <h2>Education</h2>
     <div class="education-item">
@@ -130,30 +181,39 @@
 
         <div class="coursework">
             <div class="year-section">
-                <h4>Year 3 Modules</h4>
+                <h4>Year 1 Modules</h4>
                 <ul class="module-list">
-                    <li>Artificial Intelligence II</li>
-                    <li>Security and Networks</li>
-                    <li>Team Project</li>
-                    <li>Machine Learning</li>
-                    <li>Human Computer Interaction</li>
-                    <li>Natural Language Processing</li>
-                    <li>Computer Vision</li>
-                    <li>Programming Project (Final Year Project)</li>
+                    <li><span class="grade distinction">Distinction</span>Computer Architecture and Organisation</li>
+                    <li><span class="grade distinction">Distinction</span>Database System</li>
+                    <li><span class="grade credit">Credit</span>Discrete Structures</li>
+                    <li><span class="grade credit">Credit</span>Object Oriented Programming</li>
+                    <li><span class="grade credit">Credit</span>Data Structures and Algorithms</li>
+                    <li><span class="grade credit">Credit</span>Software Engineering</li>
+                    <li><span class="grade credit">Credit</span>Operating System and Computer Networks</li>
+                    <li><span class="grade credit">Credit</span>System Fundamentals</li>
                 </ul>
             </div>
 
             <div class="year-section">
                 <h4>Year 2 Modules</h4>
                 <ul class="module-list">
-                    <li>Computer Architecture and Organisation</li>
-                    <li>Database System</li>
-                    <li>Discrete Structures</li>
-                    <li>Object Oriented Programming</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Software Engineering</li>
-                    <li>Operating System and Computer Networks</li>
-                    <li>System Fundamentals</li>
+                    <li><span class="grade high-distinction">High Distinction</span>Functional Programming</li>
+                    <li><span class="grade distinction">Distinction</span>Operating System and System Software</li>
+                    <li><span class="grade distinction">Distinction</span>Software Engineering</li>
+                    <li><span class="grade credit">Credit</span>Artificial Intelligence II</li>
+                    <li><span class="grade credit">Credit</span>Security and Networks</li>
+                    <li><span class="grade distinction">Distinction</span>Team Project</li>
+                </ul>
+            </div>
+
+            <div class="year-section">
+                <h4>Year 3 Modules</h4>
+                <ul class="module-list">
+                    <li><span class="grade credit">Credit</span>Machine Learning</li>
+                    <li><span class="grade credit">Credit</span>Human Computer Interaction</li>
+                    <li><span class="grade credit">Credit</span>Natural Language Processing</li>
+                    <li><span class="grade credit">Credit</span>Computer Vision</li>
+                    <li><span class="grade credit">Credit</span>Programming Project (Final Year Project)</li>
                 </ul>
             </div>
         </div>
